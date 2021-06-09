@@ -1,0 +1,57 @@
+body {
+  margin: 0 auto;
+}
+
+.container {
+  background-color: lightblue;
+  height: 700px;
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container h2 {
+  padding-top: 50px;
+  font-size: 42px;
+}
+
+.container .grid-container.komp, .container .grid-container.player {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-column-gap: 20px;
+}
+
+.container .grid-container.komp .grid-item, .container .grid-container.player .grid-item {
+  background-color: red;
+  padding: 80px;
+}
+
+.container .hasil {
+  background-color: blue;
+  padding: 30px;
+  margin: 40px;
+  margin-left: 90px;
+  margin-right: 90px;
+  text-align: left;
+  position: relative;
+}
+
+.container .hasil .result-text {
+  position: absolute;
+  top: 15px;
+  left: 25%;
+  font-size: 26px;
+}
+
+.container .hasil .result {
+  background-color: yellow;
+  padding: 30px;
+  width: 50px;
+  margin: 0 auto;
+  border-radius: 40px 40px;
+}
+/*# sourceMappingURL=style.css.map */

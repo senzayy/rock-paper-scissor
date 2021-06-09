@@ -1,0 +1,58 @@
+body{
+    margin : 0 auto;
+}
+
+.container{
+    background-color: lightblue;
+    height : 700px;
+    width: 700px;
+    margin : 0 auto;
+    text-align: center;
+    padding-left : 30px;
+    padding-right : 30px;
+
+    h2{
+        padding-top : 50px;
+        font-size : 42px;
+    }
+
+    .grid-container.komp, .grid-container.player{
+        display : grid;
+        grid-template-columns: auto auto auto;
+        grid-column-gap: 20px;
+
+        .grid-item{
+            background-color : red;
+            padding : 80px;
+        }
+    }
+
+    .grid-container.player{
+
+    }
+
+    .hasil{
+        background-color : blue;
+        padding : 30px;
+        margin : 40px;
+        margin-left : 90px;
+        margin-right : 90px;
+        text-align: left;
+        position: relative;
+
+        .result-text{
+            position: absolute;
+            top : 15px;
+            left : 25%;
+            font-size : 26px;
+        }
+
+        .result{
+            background-color: yellow;
+            padding : 30px;
+            width : 50px;
+            margin: 0 auto;
+            border-radius: 40px 40px;
+        }
+    }
+}
