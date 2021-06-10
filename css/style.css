@@ -26,8 +26,13 @@ body {
 }
 
 .container .grid-container.komp .grid-item, .container .grid-container.player .grid-item {
-  background-color: red;
-  padding: 80px;
+  background-color: white;
+  padding: 40px;
+}
+
+.container .grid-container.komp .grid-item .item, .container .grid-container.player .grid-item .item {
+  height: 80px;
+  width: 80px;
 }
 
 .container .hasil {
@@ -40,7 +45,7 @@ body {
   position: relative;
 }
 
-.container .hasil .result-text {
+.container .hasil .hasil-text {
   position: absolute;
   top: 15px;
   left: 25%;
@@ -50,6 +55,7 @@ body {
 .container .hasil .result {
   background-color: yellow;
   padding: 30px;
+  padding-left: 15px;
   width: 50px;
   margin: 0 auto;
   border-radius: 40px 40px;
