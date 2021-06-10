@@ -1,20 +1,116 @@
+@-webkit-keyframes idle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  15% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  90% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes idle {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  15% {
+    -webkit-transform: rotate(25deg);
+            transform: rotate(25deg);
+  }
+  30% {
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  70% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  90% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 body {
   margin: 0 auto;
+  background-color: #B8E0D2;
 }
 
 .container {
-  background-color: lightblue;
+  background-color: #d6eadf;
   height: 700px;
   width: 700px;
   margin: 0 auto;
   text-align: center;
   padding-left: 30px;
   padding-right: 30px;
+  outline-style: groove;
+  outline-color: #95B8D1;
+  outline-width: medium;
+  border-radius: 30px 30px;
 }
 
 .container h2 {
-  padding-top: 50px;
-  font-size: 42px;
+  padding-top: 5px;
+  padding-left: 40px;
+  font-size: 40px;
+  font-family: 'Shadows Into Light', cursive;
+  color: purple;
+  letter-spacing: 15px;
+  font-weight: bolder;
 }
 
 .container .grid-container.komp, .container .grid-container.player {
@@ -27,7 +123,10 @@ body {
 
 .container .grid-container.komp .grid-item, .container .grid-container.player .grid-item {
   background-color: white;
+  border-radius: 50px 50px;
   padding: 40px;
+  -webkit-box-shadow: 0px 7px gray;
+          box-shadow: 0px 7px gray;
 }
 
 .container .grid-container.komp .grid-item .item, .container .grid-container.player .grid-item .item {
@@ -35,10 +134,18 @@ body {
   width: 80px;
 }
 
+.container .grid-container.komp .chosen, .container .grid-container.player .chosen {
+  background-color: lightcoral;
+}
+
+.container .grid-container.komp .idle, .container .grid-container.player .idle {
+  -webkit-animation: idle 1.8s infinite 1.5s;
+          animation: idle 1.8s infinite 1.5s;
+}
+
 .container .hasil {
-  background-color: blue;
-  padding: 30px;
-  margin: 40px;
+  padding: 20px;
+  margin: 20px;
   margin-left: 90px;
   margin-right: 90px;
   text-align: left;
@@ -47,17 +154,50 @@ body {
 
 .container .hasil .hasil-text {
   position: absolute;
-  top: 15px;
-  left: 25%;
-  font-size: 26px;
+  top: 5px;
+  left: 10%;
+  font-size: 42px;
+  font-weight: 1000;
+  color: darkblue;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.container .hasil .comp {
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  font-size: 37px;
+  font-weight: 1000;
+  color: darkblue;
+  font-family: 'Shadows Into Light', cursive;
 }
 
 .container .hasil .result {
-  background-color: yellow;
-  padding: 30px;
-  padding-left: 15px;
-  width: 50px;
+  padding-bottom: 35px;
+  padding-top: 28px;
+  font-size: 38px;
+  letter-spacing: 5px;
+  padding-right: 25px;
+  width: 90px;
+  color: darkblue;
   margin: 0 auto;
-  border-radius: 40px 40px;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+.bubble-wrap {
+  background-color: lightskyblue;
+  position: relative;
+  left: 76%;
+  top: -270px;
+  padding: 50px;
+  display: inline-block;
+}
+
+.bubble-wrap .bubble-text {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

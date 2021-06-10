@@ -5,25 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Game Suit</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Rock-Scissor-Paper!</title>
 </head>
 <body>
     <div class="container">
-        <h2>Game Suit</h2>
+        <h2>Rock-Scissor-Paper!</h2>
         <div class="grid-container komp">
             <div class="grid-item"><img src="img/rock.png" class="item rock"></div>
             <div class="grid-item"><img src="img/paper.png" class="item paper"></div>
             <div class="grid-item"><img src="img/scissors.png" class="item scissor"></div>
         </div>
         <div class="hasil">
-            <p class="hasil-text">Hasil : </p>
-            <div class="result"><span class="result-text"></span></div>
+            <p class="hasil-text">Result : </p>
+            <div class="result"><span class="result-text">. . .</span></div>
         </div>
         <div class="grid-container player">
-            <div class="grid-item"><img src="img/rock.png" class="item rock"></div>
-            <div class="grid-item"><img src="img/paper.png" class="item paper"></div>
-            <div class="grid-item"><img src="img/scissors.png" class="item scissor"></div>
+            <div class="grid-item idle"><img src="img/rock.png" class="item rock"></div>
+            <div class="grid-item idle"><img src="img/paper.png" class="item paper"></div>
+            <div class="grid-item idle"><img src="img/scissors.png" class="item scissor"></div>
         </div>
+    </div>
+
+    <div class="bubble-wrap">
+        <p class="bubble-text">You choose paper!</p>
     </div>
 <script src="js/script.js"></script>
 </body>

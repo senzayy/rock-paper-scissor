@@ -1,19 +1,44 @@
+@keyframes idle {
+    0% {transform: rotate(0deg);}
+    15% {transform: rotate(25deg);}
+    30% {transform: rotate(-25deg);}
+    40% {transform: rotate(0deg);}
+    50% {transform: rotate(0deg);}
+    60% {transform: rotate(0deg);}
+    70% {transform: rotate(5deg);}
+    80% {transform: rotate(-5deg);}
+    90% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+ 
+
 body{
     margin : 0 auto;
+    background-color : #B8E0D2;
 }
 
 .container{
-    background-color: lightblue;
+    background-color: #d6eadf;
     height : 700px;
     width: 700px;
     margin : 0 auto;
     text-align: center;
     padding-left : 30px;
     padding-right : 30px;
+    outline-style: groove;
+    outline-color: #95B8D1;
+    outline-width : medium;
+    border-radius: 30px 30px;
 
     h2{
-        padding-top : 50px;
-        font-size : 42px;
+        padding-top : 5px;
+        padding-left : 40px;
+        font-size : 40px;
+        font-family: 'Shadows Into Light', cursive;
+        color : purple;
+        letter-spacing: 15px;
+        font-weight: bolder;
     }
 
     .grid-container.komp, .grid-container.player{
@@ -23,20 +48,30 @@ body{
 
         .grid-item{
             background-color : white;
+            border-radius: 50px 50px;
             padding : 40px;
+            box-shadow: 0px 7px gray;
+   
 
             .item{
                 height : 80px;
                 width : 80px;
             }
         }
+        
+        .chosen{
+            background-color: lightcoral;
+        }
+
+        .idle{
+            animation : idle 1.8s infinite 1.5s;
+        }
     }
 
 
     .hasil{
-        background-color : blue;
-        padding : 30px;
-        margin : 40px;
+        padding : 20px;
+        margin : 20px;
         margin-left : 90px;
         margin-right : 90px;
         text-align: left;
@@ -44,18 +79,51 @@ body{
 
         .hasil-text{
             position: absolute;
-            top : 15px;
-            left : 25%;
-            font-size : 26px;
+            top : 5px;
+            left : 10%;
+            font-size : 42px;
+            font-weight: 1000;
+            color : darkblue;
+            font-family: 'Shadows Into Light', cursive;
+        }
+
+        .comp{
+            position: absolute;
+            top : -40px;
+            left : -50px;
+            font-size : 37px;
+            font-weight: 1000;
+            color : darkblue;
+            font-family: 'Shadows Into Light', cursive;
         }
 
         .result{
-            background-color: yellow;
-            padding : 30px;
-            padding-left : 15px;
-            width : 50px;
+            padding-bottom : 35px;
+            padding-top : 28px;
+            font-size: 38px;
+            letter-spacing : 5px;
+            padding-right : 25px;
+            width : 90px;
+            color : darkblue;
             margin: 0 auto;
-            border-radius: 40px 40px;
+            font-weight: bold;
+            font-family: 'Shadows Into Light', cursive;
         }
     }
+}
+
+.bubble-wrap{
+    background-color: lightskyblue;
+    position: relative;
+    left : 76%;
+     top : -270px;
+    padding : 50px;
+   display : inline-block;
+
+   .bubble-text{
+       font-size : 34px;
+       font-weight: bold;
+       font-family: 'Shadows Into Light', cursive;
+       color : white;
+   }
 }
