@@ -42,6 +42,9 @@ const p_rock = document.querySelectorAll('.grid-item')[3];
 const p_paper = document.querySelectorAll('.grid-item')[4];
 const p_scissor = document.querySelectorAll('.grid-item')[5];
 
+const bubble_wrap = document.querySelector('.bubble-wrap');
+
+
 p_paper.addEventListener(('click'), () =>{
     let comp = generateComputer();
     let player = "paper";
@@ -54,6 +57,18 @@ p_paper.addEventListener(('click'), () =>{
     p_scissor.classList.remove('idle');
     p_rock.classList.remove('idle');
     compClass(comp);
+
+    const p = document.createElement('p');
+    const text = document.createTextNode('You choose '+player);
+    p.appendChild(text);
+    p.classList.add('bubble-text');
+    bubble_wrap.appendChild(p);
+    
+    setTimeout(()=>{
+        p.classList.add('hilang');    
+    }, 2300);
+
+
     showResult.innerHTML = result;
 });
 
@@ -69,6 +84,17 @@ p_rock.addEventListener(('click'), () =>{
     p_rock.classList.remove('idle');
     p_scissor.classList.remove('idle');
     p_paper.classList.remove('idle');
+
+    const p = document.createElement('p');
+    const text = document.createTextNode('You choose '+player);
+    p.appendChild(text);
+    p.classList.add('bubble-text');
+    bubble_wrap.appendChild(p);
+    
+    setTimeout(()=>{
+        p.classList.add('hilang');    
+    }, 2300);
+
     showResult.innerHTML = result;
 });
 
@@ -84,5 +110,16 @@ p_scissor.addEventListener(('click'), () =>{
     p_scissor.classList.remove('idle');
     p_paper.classList.remove('idle');
     p_rock.classList.remove('idle');
+    
+    const p = document.createElement('p');
+    const text = document.createTextNode('You choose '+player);
+    p.appendChild(text);
+    p.classList.add('bubble-text');
+    bubble_wrap.appendChild(p);
+    
+    setTimeout(()=>{
+        p.classList.add('hilang');    
+    }, 2300);
+
     showResult.innerHTML = result;
 });
